@@ -47,7 +47,7 @@ form.addEventListener('submit', (e)=> {
         i=1;
     }
     else{
-        failf(email,"Email must be of the form abc@xyz");
+        failf(email,"Email must be of the form abc@xyz.pqr");
         i=0;
     }
     const regpwd = /^.{8,}$/;
