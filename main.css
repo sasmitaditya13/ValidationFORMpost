@@ -1,0 +1,71 @@
+body{
+    display:flex;
+    justify-content: center;
+    background-color: #e0115f;
+}
+.container1{
+    padding: 2rem;
+    border-radius: 10px;
+    display:flex;
+    flex-direction:column;
+    margin-top: 15rem;
+    background-color: aquamarine;
+}
+.title
+{
+    text-align: center;
+    font-size: 3rem;
+}
+.input{
+    display:flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.input input{
+    font-size: 1.5rem;
+}
+.input .fa-check-circle{
+    color: green;
+    position: absolute;
+    transform: translate(25rem,2.35rem);
+    visibility: hidden;
+}
+.input .fa-exclamation-circle{
+    color: red;
+    position: absolute;
+    transform: translate(25rem,2.35rem);
+    visibility: hidden;
+    /* visibility: visible; */
+}
+
+.input.success .fa-check-circle{
+    visibility: visible;
+}
+
+.input.fail .fa-exclamation-circle{
+    visibility: visible;
+}
+.input small{
+    color: red;
+    font-size: 1.5rem;
+    display: none;
+    overflow-wrap: break-word;
+    width: 26rem;
+}
+
+.input.fail small{
+    display: block;
+}
+
+.submit{
+    margin:2rem;
+    font-size: 2rem;
+    background-color: aqua;
+    width: 23rem;
+    text-align: center;
+}
+small{
+    display: flex;
+    color: green;
+}

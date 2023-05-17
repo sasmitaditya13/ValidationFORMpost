@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+<body>
+    <div class="container1">
+        <div class="title">VALIDATION FORM</div>
+        <form id="form">
+            <div class="input">
+                <label for="email">E-MAIL</label>
+                <input type="text" id="email" name="email" onkeyup="checkmail()">
+                <i class="fa fa-check-circle" class="success"></i>
+                <i class="fa fa-exclamation-circle" class="fail"></i>
+                <small></small>
+            </div>
+            <div class="input">
+                <label for="pass">PASSWORD</label>
+                <input type="text" id="pass" name="password" onkeyup="checkpass()">
+                <i class="fa fa-check-circle" class="success"></i>
+                <i class="fa fa-exclamation-circle" class="fail"></i>
+                <small></small>
+            </div>
+            <button class="submit">SUBMIT</button>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
