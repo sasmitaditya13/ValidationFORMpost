@@ -17,8 +17,9 @@ function successf(elem)
     elem.parentElement.className = 'input success';
 }
 function checkmail(){
-    const regem= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    if(regem.test(email.value))
+    const regem= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+$/;
+    const regem2= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+$/;
+    if(regem.test(email.value) || regem2.test(email.value))
     {
         successf(email);
     }
@@ -40,8 +41,9 @@ function checkpass(){
 
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
-    const regem= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
-    if(regem.test(email.value))
+    const regem= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+$/;
+    const regem2= /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+\.{1}[a-zA-Z0-9-]+$/;
+    if(regem.test(email.value) || regem2.test(email.value))
     {
         successf(email);
         i=1;
