@@ -80,8 +80,11 @@ form.addEventListener('submit', (e)=> {
 
 function display(errr)
 {
-    if(errr.ok)
+    if(errr.ok){
     alert("Successfully logged in");
+    form.reset();
+    email.parentElement.className = 'input';
+    pwd.parentElement.className = 'input';}
     else
     alert("Incorrect email or password");
     
